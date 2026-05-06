@@ -1,0 +1,22 @@
+---
+description: Pointer to AGENT_BRAIN.md — full Tosca workspace + pipeline + agent process lives there.
+alwaysApply: true
+---
+
+<!-- AI Generated Code by Deloitte + Cursor (BEGIN) -->
+
+# Tosca workspace & migration — read `AGENT_BRAIN.md`
+
+**Canonical specification:** open **`AGENT_BRAIN.md`** at the repo root (same folder as `package.json`).
+
+Your mental model stays:
+
+- **Accuracy** — Resolve steps to **`XModuleAttribute`**, RTB→module linkage, placeholders (`{REGEX}`, `{RND}`, buffers/params).
+- **Proper format** — Export → JSON/JSONL → **`build:tosca-full`** → **`agent:migration`** / **`migrate:pipeline`** traces every Playwright assertion to exported rows.
+- **Nothing missing** — Full testcase phase order (**§ 3–4** in **`AGENT_BRAIN.md`**).
+
+Sections in **`AGENT_BRAIN.md`**: **`§ 5`** pipeline, **`§ 6`** env vars, **`§ 7`** manifest, **`§ 8–11`** data path / gap-fill / failures, **`§§ 17–21`** editable goals and backlog.
+
+Edit **`AGENT_BRAIN.md`** for durable workflow changes — do not fork conflicting process prose here without updating the brain.
+
+<!-- AI Generated Code by Deloitte + Cursor (END) -->

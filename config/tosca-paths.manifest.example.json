@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "notes": "Copy to a path outside git (or use .env-only pointer) and set TOSCA_PATHS_MANIFEST. After CSV/JSON export, run `npm run migrate:pipeline` from the Playwright repo (with TOSCA_MIGRATION_DIR). Do not commit workspace-specific paths or secrets.",
+  "toscaWorkspaceRoots": ["C:\\ToscaWorkspaces\\MyProject"],
+  "exportOutputDir": "C:\\Exports\\migration",
+  "nodePaths": {
+    "modules": "MyProject/Modules",
+    "libraries": {
+      "author": "MyProject/Library/Author",
+      "publish": "MyProject/Library/Publish",
+      "common": "MyProject/Library/Common"
+    },
+    "testcases": "MyProject/TestCases"
+  },
+  "tcshell": {
+    "executablePath": "C:\\Program Files\\Tricentis\\Tosca Commander\\TCShell.exe",
+    "workingDirectory": "C:\\ToscaWorkspaces\\MyProject",
+    "gapFillCommands": [
+      "Example: project-specific TCShell script names or one-liners to re-export a module row, buffer, or step when the migration agent reports a gap."
+    ]
+  }
+}

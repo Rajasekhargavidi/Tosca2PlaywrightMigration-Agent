@@ -1,0 +1,47 @@
+---
+description: Pointer to AGENT_BRAIN.md for Playwright harness, exports, and test policy.
+globs:
+  - "**/testcases.jsonl"
+  - "**/Detailed_TestSteps.jsonl"
+  - "**/playwright_buffer_map.json"
+  - "**/playwright_migration_bundle.json"
+  - "**/playwright_tosca_full_migration.json"
+  - "**/fixtures/structuredMigration.ts"
+  - "**/fixtures/moduleCatalog.ts"
+  - "**/fixtures/moduleElementValidation.ts"
+  - "**/fixtures/rtbRefs.ts"
+  - "**/fixtures/testcaseStepValidation.ts"
+  - "**/fixtures/toscaPlaceholderRefs.ts"
+  - "**/fixtures/toscaRnd.ts"
+  - "**/fixtures/toscaControlFlow.ts"
+  - "**/fixtures/fullMigrationMap.ts"
+  - "**/fixtures/bufferMap.ts"
+  - "**/fixtures/migrationPaths.ts"
+  - "**/fixtures/migratedPlaywrightLayout.ts"
+  - "**/fixtures/toscaMigrationAgent.ts"
+  - "**/fixtures/toscaPathsManifest.ts"
+  - "**/fixtures/toscaTestcaseConfigurations.ts"
+  - "**/config/tosca-paths.manifest.example.json"
+  - "**/playwright_migration_agent_report.json"
+  - "**/scripts/run-full-migration-pipeline.mjs"
+  - "**/scripts/tosca-migration-agent.ts"
+  - "**/tests/tosca-*.spec.ts"
+alwaysApply: false
+---
+
+<!-- AI Generated Code by Deloitte + Cursor (BEGIN) -->
+
+# Tosca migration → Playwright tests
+
+**Post-migration readability:** **`§ 22`** in **`AGENT_BRAIN.md`** — **`tests/migrated/{module,testcase,library}/`**, **`npm run scaffold:migrated-stubs`** then **`npm run generate:tosca-tests`**, **`MIGRATED_PLAYWRIGHT_LAYOUT=1`** (**scaffold → generate** in **`migrate:pipeline`**).
+
+Quick reminders when editing **`tests/tosca-*.spec.ts`** or **`fixtures/**`**:
+
+1. Prefer **`migrate:pipeline`** (**`§ 5`**) after export changes.
+2. JSONL harness: **`tosca-testcases-from-migration.spec.ts`** (**`§ 12`**) vs optional **`npm run generate:tosca-tests`**.
+3. Merged literals: **`getMergedLiteralsForPlaywright`**, **`getPlaceholderResolutionContext`**, **`loadToscaFullMigration`**.
+4. **`AGENT_STRICT=1`** with **`npm run agent:migration`** (**`§ 12`**).
+
+If this rule and **`AGENT_BRAIN.md`** disagree, **`AGENT_BRAIN.md`** wins unless **§ 16 Exceptions** states otherwise — then reconcile this stub.
+
+<!-- AI Generated Code by Deloitte + Cursor (END) -->

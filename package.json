@@ -1,0 +1,20 @@
+{
+  "name": "tosca-playwright-migration",
+  "private": true,
+  "description": "Playwright tests for Tosca migration JSON Lines. Single workflow: npm run migrate:pipeline (with TOSCA_MIGRATION_DIR). Regenerate readable layout: npm run migrated:layout (scaffold then testcase specs).",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "generate:tosca-tests": "node scripts/generate-tosca-playwright-tests.mjs",
+    "scaffold:migrated-stubs": "node scripts/scaffold-migrated-layout-stubs.mjs",
+    "migrated:layout": "node scripts/scaffold-migrated-layout-stubs.mjs && node scripts/generate-tosca-playwright-tests.mjs",
+    "build:migration-bundle": "node scripts/build-playwright-migration-bundle.mjs",
+    "build:tosca-full": "node scripts/build-tosca-full-migration.mjs",
+    "agent:migration": "npx tsx scripts/tosca-migration-agent.ts",
+    "migrate:pipeline": "node scripts/run-full-migration-pipeline.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "tsx": "^4.19.2"
+  }
+}

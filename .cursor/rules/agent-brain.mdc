@@ -1,0 +1,35 @@
+---
+description: AGENT_BRAIN.md is canonical—user edits drive agent reconciliation + .mdc sync.
+alwaysApply: true
+---
+
+<!-- AI Generated Code by Deloitte + Cursor (BEGIN) -->
+
+# Agent brain hook
+
+## Canonical document
+
+All **agent mission, Tosca workspace model, pipeline, Playwright harness, prerequisite gating, test policy, and security expectations** live in **`AGENT_BRAIN.md`** at the repo root.
+
+**Thin Cursor mirrors:** `.cursor/rules/tosca-workspace-and-migration-process.mdc` + `tosca-post-migration-tests.mdc` — pointers only. **`AGENT_BRAIN.md`** is the **maintained** specification.
+
+## When to read `AGENT_BRAIN.md`
+
+On **every** substantive task here (migration, fixtures, **`tests/`**, **`scripts/`**, pipelines, codegen), **read `AGENT_BRAIN.md`**: at minimum **§ 1**, all sections relevant to the task, and **§§ 17–21** (editable directives).
+
+If the user says they updated **`AGENT_BRAIN.md`**, **re-read the full file**, then reconcile the repo.
+
+## Reconciliation obligations
+
+- **§§ 17–21** (goals, rules, backlog, blockers, decisions) → implement in code/tests/scripts; use **§ 14** structured asks if data is missing.
+- **§ 16** (exceptions) → apply explicitly in code/tests.
+- **§§ 2–15** (process / harness prose you changed) → sync **`.cursor/rules/*.mdc`** stubs, **`fixtures/`**, **`tests/`**, **`scripts/`** so behavior matches.
+- **Conflicts** → prefer **`AGENT_BRAIN.md`**; surface contradictions to the user.
+
+## Maintainability
+
+- After completing backlog items (**§ 19`), offer to tick checkboxes **if** the user wants.
+
+- Prefer **incremental edits** when updating **`AGENT_BRAIN.md`** to match shipped code (add a row in **§ 21** when useful) — unless the user requests a verbose dump.
+
+<!-- AI Generated Code by Deloitte + Cursor (END) -->
